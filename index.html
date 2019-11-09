@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Passing Variables Test!</title>
+      <style>
+        p {
+          font-size: 30px;
+        }
+      </style>
+    </head>
+    <body>
+      <center><b><p id="maintitle">Enter your name!</p></b>
+      <form action="homepage">
+        <input type="text" id="txt">
+        <input type="submit" value="Click" onclick="passvalues();">
+      </form>
+      </center>
+      <script>
+        funtion passvalues() {
+          var firstname = document.getElementById("txt").value;
+          localStorage.setItem("textvalue", firstname);
+          return false;
+        }
+      </script>
+    </body>
+  </html>
